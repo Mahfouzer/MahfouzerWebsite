@@ -1,6 +1,20 @@
 html {
   background-color: $primary;
   position: relative;
+  font-family: "Gilroy" !important;
+
+  a,
+  h1,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  dd,
+  dt,
+  dl {
+    font-family: "Gilroy" !important;
+  }
 
   .App {
     text-align: center;
@@ -28,6 +42,7 @@ html {
           display: inline;
           font-style: italic;
           font-size: 3em;
+          word-spacing: 0.3em;
         }
       }
 
@@ -45,6 +60,12 @@ html {
           text-align: center;
           font-style: 0.9em;
           font-weight: bold;
+
+          &:last-child {
+            font-weight: 400;
+            font-style: italic;
+            margin-top: 15px;
+          }
         }
       }
     }

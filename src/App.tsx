@@ -22,7 +22,7 @@ const App: React.FC = () => {
             />
           </dt>
           <dd>mahfouzs96@gmail.com</dd>
-          <dd>01286854355</dd>
+          <dd>+201286854355</dd>
           <dd>@Mahfouzer</dd>
         </dl>
       </main>

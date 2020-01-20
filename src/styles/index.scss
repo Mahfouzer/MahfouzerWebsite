@@ -3,4 +3,20 @@ $secondary: #1f00b3;
 
 @import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
 
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/font/Radomir\ Tinkov\ -\ Gilroy-Regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../assets/font/Radomir\ Tinkov\ -\ Gilroy-Bold.otf")
+    format("opentype");
+}
+
 @import "App", "Nav", "CV-info";
