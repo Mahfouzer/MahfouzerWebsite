@@ -1,32 +1,28 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
-
-let isDone: boolean = false;
-
-// let list: Array<StyleMedia> = [isDone, 1];
-
-// enum Color {Red, Green, Blue}
+import "./App.scss";
+import InformationWrapper from "./components/InformationWrapper";
+import Nav from "./components/Nav";
 
 const App: React.FC = () => {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        {isDone ? (
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        ) : null}
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
+      <header>
+        <h2>FRONT-END DEVELOPER</h2>
+        <p>coming soon</p>
       </header>
+      <Nav />
+      <main>
+        <InformationWrapper />
+        <dl>
+          <dt>
+            {" "}
+            <img className='App-logo' src={logo} alt='' />
+          </dt>
+          <dt></dt>
+          <dt></dt>
+        </dl>
+      </main>
     </div>
   );
 };

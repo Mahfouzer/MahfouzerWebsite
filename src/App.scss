@@ -1,0 +1,41 @@
+html {
+  background-color: #f7e031;
+  position: relative;
+
+  .App {
+    text-align: center;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: url("./bg.webp");
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      opacity: 0.02;
+      z-index: -1;
+    }
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
