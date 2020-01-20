@@ -1,41 +1,74 @@
 html {
-  background-color: #f7e031;
+  background-color: $primary;
   position: relative;
 
   .App {
     text-align: center;
+    padding: 12%;
+    padding-top: 9%;
+    padding-bottom: 0;
+    margin: 5px;
+    display: flex;
+
+    main {
+      width: 60%;
+      height: 70vh;
+      position: relative;
+      margin-left: 30px;
+
+      header.my-job {
+        background-color: $secondary;
+        border: 2px solid white;
+        position: relative;
+        margin-top: -40px;
+
+        &.my-job h2 {
+          font-family: "Staatliches", cursive;
+          color: $primary;
+          display: inline;
+          font-style: italic;
+          font-size: 3em;
+        }
+      }
+
+      dl {
+        position: fixed;
+        right: 0;
+        top: 35%;
+
+        dt {
+          margin-bottom: -45px;
+        }
+
+        dd {
+          margin-left: 0;
+          text-align: center;
+          font-style: 0.9em;
+          font-weight: bold;
+        }
+      }
+    }
+    .App-logo {
+      height: 25vh;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+      }
+    }
 
     &:after {
       content: "";
       position: absolute;
       background: url("../assets/bg.webp");
       width: 100%;
-      height: 100vh;
+      height: 100%;
       background-size: cover;
       top: 0;
       left: 0;
       opacity: 0.02;
       z-index: -1;
-    }
-  }
-
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
     }
   }
 }

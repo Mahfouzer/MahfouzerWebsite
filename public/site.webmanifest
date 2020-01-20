@@ -1,0 +1,19 @@
+{
+  "name": "Mahfouzer Website",
+  "short_name": "MahfouzerWEB",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000",
+  "background_color": "#f7e031",
+  "display": "standalone"
+}
