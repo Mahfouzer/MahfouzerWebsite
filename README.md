@@ -1,3 +1,7 @@
+# MahfouzerWebsite
+
+A website about me and my previous work and experiences
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
