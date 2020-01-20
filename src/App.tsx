@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.scss";
+import logo from "./assets/logo.svg";
+import "./styles/App.scss";
 import InformationWrapper from "./components/InformationWrapper";
 import Nav from "./components/Nav";
 
