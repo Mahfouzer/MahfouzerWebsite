@@ -1,6 +1,11 @@
 section.main-navigation {
   width: 20%;
   border: 3px solid black;
+  min-width: 170px;
+
+  @include for-size(tablet-down) {
+    display: none;
+  }
   figure {
     width: 70%;
     margin: 0 auto;

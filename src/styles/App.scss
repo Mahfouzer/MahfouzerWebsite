@@ -2,6 +2,7 @@ html {
   background-color: $primary;
   position: relative;
   font-family: "Gilroy" !important;
+  min-height: 100vh;
 
   a,
   h1,
@@ -24,25 +25,45 @@ html {
     margin: 5px;
     display: flex;
 
+    @include for-size(mobile-down) {
+      padding: {
+        right: 2%;
+        left: 2%;
+      }
+    }
+
     main {
       width: 60%;
       height: 70vh;
       position: relative;
       margin-left: 30px;
+      @include for-size(desktop-down) {
+        width: 100%;
+        height: 66vh;
+      }
+
+      @include for-size(mobile-down) {
+        margin-left: 0;
+      }
 
       header.my-job {
         background-color: $secondary;
         border: 2px solid white;
         position: relative;
         margin-top: -40px;
+        max-height: 15%;
 
         &.my-job h2 {
           font-family: "Staatliches", cursive;
           color: $primary;
           display: inline;
           font-style: italic;
-          font-size: 3em;
+          font-size: 5vw;
           word-spacing: 0.3em;
+          line-height: 70px;
+          @include for-size(tablet-down) {
+            font-size: 7vw;
+          }
         }
       }
 
@@ -51,8 +72,26 @@ html {
         right: 0;
         top: 35%;
 
+        // @include for-size(1100px) {
+        //   right: -4%;
+        // }
+        @include for-size(desktop-down) {
+          bottom: 15px;
+          right: 100%;
+          left: 50%;
+          top: unset;
+        }
+
         dt {
           margin-bottom: -45px;
+
+          img {
+            @include for-size(desktop-down) {
+              position: relative;
+              right: 173px;
+              bottom: -90px;
+            }
+          }
         }
 
         dd {
@@ -60,6 +99,9 @@ html {
           text-align: center;
           font-style: 0.9em;
           font-weight: bold;
+          @include for-size(desktop-down) {
+            text-align: left;
+          }
 
           &:last-child {
             font-weight: 400;

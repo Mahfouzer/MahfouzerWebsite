@@ -21,9 +21,9 @@ const App: React.FC = () => {
               alt='Mahfouzer personal logo'
             />
           </dt>
-          <dd>mahfouzs96@gmail.com</dd>
-          <dd>+201286854355</dd>
-          <dd>@Mahfouzer</dd>
+          <dd className='email'>mahfouzs96@gmail.com</dd>
+          <dd className='mobile-number'>+201286854355</dd>
+          <dd className='social-media-handel'>@Mahfouzer</dd>
         </dl>
       </main>
     </div>
